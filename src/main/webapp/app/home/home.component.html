@@ -6,6 +6,9 @@
     <div class="col" *ngFor="let item of cards">
       <div class="card h-100 card-item">
         <div class="card-header">
+          <div class="label label-important">
+            <div class="label-text">Version 1</div>
+          </div>
           <p class="text-muted">Date updated: {{ item.dateUpdated | date: 'MMM d, y' }}</p>
         </div>
         <div class="card-body">
@@ -14,6 +17,15 @@
         </div>
         <div class="card-footer">
           <p class="text-muted">{{ item.owner }}</p>
+          <div class="label label-default">
+            <div class="label-text">Version 1</div>
+          </div>
+          <div class="label label-default">
+            <div class="label-text">Version 1</div>
+          </div>
+          <div class="label label-default">
+            <div class="label-text">Version 1</div>
+          </div>
         </div>
       </div>
     </div>

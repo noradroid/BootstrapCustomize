@@ -338,3 +338,30 @@ p {
 //     margin: 10px 0;
 //   }
 // }
+
+// label
+
+.label {
+  display: inline-block;
+  border-radius: 6px;
+  border: none;
+  padding: 5px 10px;
+  margin: 0;
+  & .label-text {
+    display: flex;
+    font-weight: 600;
+    letter-spacing: 0.015em;
+    align-items: center;
+    white-space: nowrap;
+  }
+}
+
+.label-default {
+  background-color: $grey-50;
+  color: white;
+}
+
+.label-important {
+  background-color: $red-60;
+  color: white;
+}
