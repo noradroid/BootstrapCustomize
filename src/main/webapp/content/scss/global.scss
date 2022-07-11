@@ -1,7 +1,8 @@
 @import 'bootstrap-variables';
 @import '~bootstrap/scss/functions';
-@import '~bootswatch/dist/darkly/variables';
+// @import '~bootswatch/dist/darkly/variables';
 @import '~bootstrap/scss/variables';
+@import 'colors';
 
 /* ==============================================================
 Bootstrap tweaks
@@ -200,3 +201,140 @@ angular-cli removes postcss-rtl processed inline css, processed rules must be ad
   }
 }
 /* jhipster-needle-scss-add-main JHipster will add new css style */
+
+/* Adding design components based on DARC Design System */
+
+// Colors
+
+.txt-success {
+  color: $success-default;
+}
+
+.txt-failure {
+  color: $failure-default;
+}
+
+.txt-link {
+  color: $link-default;
+}
+
+.txt-neutral {
+  color: $neutral-default;
+}
+
+.bg-success {
+  background-color: $success-default;
+}
+
+.bg-failure {
+  background-color: $failure-default;
+}
+
+.bg-link {
+  background-color: $link-default;
+}
+
+.bg-neutral {
+  background-color: $neutral-default;
+}
+
+.img-filter-success {
+  filter: invert(58%) sepia(75%) saturate(373%) hue-rotate(105deg) brightness(85%) contrast(92%);
+}
+
+.img-filter-failure {
+  filter: invert(10%) sepia(74%) saturate(7436%) hue-rotate(353deg) brightness(98%) contrast(102%);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: black;
+  letter-spacing: 0.015em;
+}
+
+.card-item {
+  background-color: white;
+  display: flex;
+  flex: 0 1 100%;
+  // min-height: 270px;
+  // max-height: 270px;
+  border: 1px solid $grey-40;
+  .card-body {
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 100%;
+    // display: -webkit-box;
+    // -webkit-line-clamp: 4;
+
+    max-height: 190px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    p {
+    }
+  }
+  .card-header,
+  .card-footer {
+    background-color: white;
+    border: 0;
+    // min-height: 5%;
+    // max-height: 5%;
+  }
+  .card-header {
+    // all: unset;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .card-footer {
+    // all: unset;
+    // margin: 0 1em;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+// .card {
+//   all: unset;
+//   margin: 1em;
+//   padding: 1em;
+//   background-color: white;
+//   display: flex;
+//   flex-direction: column;
+//   flex: 0 1 32%;
+//   max-height: 100%;
+//   max-width: 500px;
+//   min-width: calc(33% - 3em); // we want to show 5 at any screen size
+//   // align-items: stretch;
+//   .card-body {
+//     all: unset;
+//     // max-height: 20px;
+//     // overflow: hidden;
+//     // text-overflow: ellipsis;
+//     h3 {
+//       font-weight: 700;
+//     }
+//     p {
+//       max-width: 150ch;
+//     }
+//   }
+//   .card-header {
+//     all: unset;
+//     // height: 10%;
+//   }
+//   .card-footer {
+//     all: unset;
+//     align-self: flex-start;
+//     margin: 10px 0;
+//   }
+// }
